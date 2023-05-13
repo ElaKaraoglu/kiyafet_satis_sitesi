@@ -45,7 +45,11 @@
                 <tr>
                   <td>{{$rs->id}}</td>
                   <td>{{$rs->ad}}</td>
+<<<<<<< Updated upstream
                   <td >{{$rs->kategori_id}}</td>
+=======
+                  <td>{{$rs->kategori_id}}</td>
+>>>>>>> Stashed changes
 
                   <td>{{$rs->fiyat}}</td>
                   <td>{{$rs->beden}}</td>

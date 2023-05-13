@@ -35,7 +35,7 @@ class UrunController extends Controller
      */
     public function create()
     {
-        $data=kategoriler::all('ad');
+        $data=kategoriler::all();
 
         return view('admin.urun.create',[
             'data'=>$data
@@ -93,7 +93,7 @@ class UrunController extends Controller
     public function edit(urunler $urun ,$id)
     {
         $data= urunler::find($id);
-        $datalist =kategoriler::all('id');
+        $datalist =kategoriler::all();
         return view('admin.urun.edit',[
            'data' => $data,
            'datalist' => $datalist
@@ -116,10 +116,13 @@ class UrunController extends Controller
         $data= urunler::find($id);
 
          $data->ad = $request->name;
-         $data->parent_id = $request->parent_id;
-         $data->ana_kategori = $request->main_category;
+         $data->kategori_id = $request->category_id;
          $data->keywords=$request->keywords;
          $data->durum=$request->status;
+         $data->fiyat=$request->price;
+         $data->renk=$request->color;
+         $data->beden=$request->size;
+         $data->miktar=$request->quantity;
 
          if($request->hasfile('image'))
          {
