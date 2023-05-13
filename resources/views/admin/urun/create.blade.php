@@ -30,7 +30,7 @@
                   <select class="form-control" name="category_id" >
 
                     @foreach($data as $rs)
-                    <option value="{{$rs->id}}" >{{$rs->ad}}</option>
+                    <option >{{$rs->ad}}</option>
                     @endforeach
                      </select>
                 </div>

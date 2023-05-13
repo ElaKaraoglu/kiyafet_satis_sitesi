@@ -1,90 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <!-- basic -->
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- mobile metas -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
-    <!-- site metas -->
-    <title>@yield('title')</title>
-    <meta name="keywords" content="@yield('keywords')">
-    <meta name="description" content="@yield('description')">
-    <meta name="author" content="Ela Karaoğlu">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <!-- bootstrap css -->
-    <link rel="stylesheet" type="text/css" href="{{asset('assets')}}/css/bootstrap.min.css">
-    <!-- style css -->
-    <link rel="stylesheet" type="text/css" href="{{asset('assets')}}/css/style.css">
-    <!-- Responsive-->
-    <link rel="stylesheet" href="{{asset('assets')}}/css/responsive.css">
-    <!-- fevicon -->
-    <link rel="icon" href="@yield('icon')" type="image/x-icon" />
-    <!-- Scrollbar Custom CSS -->
-    <link rel="stylesheet" href="{{asset('assets')}}/css/jquery.mCustomScrollbar.min.css">
-    <!-- Tweaks for older IEs-->
-    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
-    <!-- fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Great+Vibes|Open+Sans:400,700&display=swap&subset=latin-ext" rel="stylesheet">
-    <!-- owl stylesheets -->
-    <link rel="stylesheet" href="{{asset('assets')}}/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="{{asset('assets')}}/css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="assets/https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
-    <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" />
-    @yield('head')
-    <style>
-.dropbtn {
-  background-color: #4CAF50;
-  color: white;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
-}
+    <title>EShopper - Bootstrap Shop Template</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
 
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
+    <!-- Favicon -->
+    <link href="{{asset('assets')}}/img/favicon.ico" rel="icon">
 
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
 
-.dropdown-content a:hover {background-color: #f1f1f1}
+    <!-- Libraries Stylesheet -->
+    <link href="{{asset('assets')}}/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
 
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-.dropdown:hover .dropbtn {
-  background-color: #3e8e41;
-}
-</style>
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="{{asset('assets')}}/css/style.css" rel="stylesheet">
 </head>
+
 <body>
-@include('front.header')
 
+@include('front.topbar')
 
-@yield('banner')
 @yield('content')
-@include('front.about')
-@include('front.contact')
+@yield('navbar')
 @include('front.footer')
-</body>
 
-</html>
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+<script src="js/main.js"></script>
+</body>
+<html>
+

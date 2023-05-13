@@ -15,7 +15,7 @@ return new class extends Migration
     {
         Schema::create('urunler', function (Blueprint $table) {
             $table->integer('id')->primary();
-            $table->foreignId('kategori_id');
+            $table->foreignId('kategori_id')->nullable();
             $table->string('ad');
             $table->text('aciklama');
             $table->integer('fiyat');

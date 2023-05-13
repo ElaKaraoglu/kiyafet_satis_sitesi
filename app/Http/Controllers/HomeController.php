@@ -11,23 +11,11 @@ use Illuminate\Support\Facades\Auth;
 
 class HomeController extends Controller
 {
-    public static function categorylist()
-    {
-        return kategoriler::where('parent_id', "=", 0)->with('children')->get();
-    }
+
    public function index()
    {
 
-        $sliderdata=kategoriler::limit(4)->get();
-        $productlist=urunler::limit(4)->get();
-        $setting=settings::first();
-        $userstatus=false;
-        return view('front.index',[
-            'sliderdata'=>$sliderdata,
-            'productlist'=>$productlist,
-            'setting'=>$setting,
-            'userstatus'=>$userstatus
-        ]);
+       return view('front.index');
    }
    public function product($id)
    {
@@ -80,6 +68,11 @@ class HomeController extends Controller
     public function login()
     {
         return view('front.loging');
+    }
+
+    public function register()
+    {
+        return view('front.register');
     }
 
     public function logincheck(Request $request)
@@ -152,4 +145,11 @@ class HomeController extends Controller
     return view('front.userlogin');
     }
 
+     public function products($id)
+     {
+       $data=urunler::where('kategori_id',$id);
+       return view('front.products',[
+        'data'=>$data
+       ]);
+     }
 }

@@ -14,7 +14,7 @@ return new class extends Migration
     public function up()
     {
         Schema::create('kategoriler', function (Blueprint $table) {
-            $table->integer('id')->primary();
+            $table->integer('id')->primary()->nullable();
             $table->string('ad');
             $table->string('keywords');
             $table->string('durum')->nullable();
