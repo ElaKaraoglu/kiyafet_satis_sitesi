@@ -52,7 +52,11 @@
                     <i class="fas fa-heart text-primary"></i>
                     <span class="badge">0</span>
                 </a>
+<<<<<<< HEAD
                 <a href="/shopcart" class="btn border">
+=======
+                <a href="" class="btn border">
+>>>>>>> b0a1708783c8cc22a04ca962a2b104a0c897c262
                     <i class="fas fa-shopping-cart text-primary"></i>
                     <span class="badge">0</span>
                 </a>

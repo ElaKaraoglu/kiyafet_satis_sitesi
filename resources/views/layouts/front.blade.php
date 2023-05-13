@@ -28,9 +28,14 @@
 <body>
 
 @include('front.topbar')
+<<<<<<< HEAD
 
 @yield('content')
 @yield('navbar')
+=======
+@include('front.navbar')
+@yield('content')
+>>>>>>> b0a1708783c8cc22a04ca962a2b104a0c897c262
 @include('front.footer')
 
 
