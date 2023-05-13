@@ -30,11 +30,15 @@
                   <select class="form-control" name="category_id" >
 
                     @foreach($data as $rs)
+<<<<<<< HEAD
 <<<<<<< Updated upstream
                     <option >{{$rs->ad}}</option>
 =======
                     <option>{{$rs->id}}</option>
 >>>>>>> Stashed changes
+=======
+                    <option value="{{$rs->id}}" >{{$rs->ad}}</option>
+>>>>>>> parent of 22c0775 (products)
                     @endforeach
                      </select>
                 </div>

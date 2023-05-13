@@ -45,11 +45,15 @@
                 <tr>
                   <td>{{$rs->id}}</td>
                   <td>{{$rs->ad}}</td>
+<<<<<<< HEAD
 <<<<<<< Updated upstream
                   <td >{{$rs->kategori_id}}</td>
 =======
                   <td>{{$rs->kategori_id}}</td>
 >>>>>>> Stashed changes
+=======
+                  <td>{{ \App\Http\Controllers\AdminPanel\KategoriController::getParentsTree($rs->kategori,$rs->kategori->ad)}}</td>
+>>>>>>> parent of 22c0775 (products)
 
                   <td>{{$rs->fiyat}}</td>
                   <td>{{$rs->beden}}</td>

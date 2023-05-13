@@ -8,7 +8,6 @@ use App\Http\Controllers\AdminPanel\KategoriController;
 use App\Http\Controllers\AdminPanel\UrunController;
 
 use App\Http\Controllers\HomeController ;
-use App\Http\Controllers\KullaniciController;
 use App\Http\Controllers\SepetController;
 
 /*
@@ -24,9 +23,10 @@ use App\Http\Controllers\SepetController;
 
 Route::get('/',[HomeController::class,'index']);
 Route::post('/admin/logincheck', [HomeController::class,'logincheck'])->name('logincheck');
-
+Route::get('/product/{id}',[HomeController::class,'product'])->name('product');
 Route::get('/admin/login', [HomeController::class,'login'])->name('adminlogin');
 Route::get('/login', [HomeController::class,'userlogin'])->name('userlogin');
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 Route::get('/products/{id}', [HomeController::class,'products'])->name('products');
 Route::get('/user', [KullaniciController::class,'index'])->name('userlogin');
@@ -35,6 +35,8 @@ Route::get('/register', [HomeController::class,'register'])->name('register');
 =======
 Route::post('/admin/product/update/{id}',[UrunController::class,'update'])->name('update');
 >>>>>>> Stashed changes
+=======
+>>>>>>> parent of 22c0775 (products)
 Route::post('/userlogincheck', [HomeController::class,'userlogincheck'])->name('userlogincheck');
     Route::get('/admin/logout', [HomeController::class,'logout'])->name('adminlogout');
  Route::get('/test/{id}/{name}',[HomeController::class,'test'])->whereNumber('id')->whereAlpha('name');
