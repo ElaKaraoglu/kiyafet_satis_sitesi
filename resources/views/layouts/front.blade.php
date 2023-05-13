@@ -79,11 +79,24 @@
 <body>
 @include('front.header')
 
+<<<<<<< HEAD
+=======
+@include('front.topbar')
+<<<<<<< HEAD
+>>>>>>> parent of cd240ff (Revert "products")
 
 @yield('banner')
 @yield('content')
+<<<<<<< HEAD
 @include('front.about')
 @include('front.contact')
+=======
+@yield('navbar')
+=======
+@include('front.navbar')
+@yield('content')
+>>>>>>> b0a1708783c8cc22a04ca962a2b104a0c897c262
+>>>>>>> parent of cd240ff (Revert "products")
 @include('front.footer')
 </body>
 
