@@ -84,6 +84,9 @@
 @include('front.topbar')
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of cd240ff (Revert "products")
+=======
 >>>>>>> parent of cd240ff (Revert "products")
 =======
 >>>>>>> parent of cd240ff (Revert "products")
@@ -100,6 +103,9 @@
 @yield('content')
 >>>>>>> b0a1708783c8cc22a04ca962a2b104a0c897c262
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of cd240ff (Revert "products")
+=======
 >>>>>>> parent of cd240ff (Revert "products")
 =======
 >>>>>>> parent of cd240ff (Revert "products")
