@@ -28,6 +28,7 @@ Route::get('/product_page', [HomeController::class,'product_page'])->name('produ
 Route::get('/admin/login', [HomeController::class,'login'])->name('adminlogin');
 Route::get('/login', [HomeController::class,'userlogin'])->name('userlogin');
 Route::get('/products/{id}', [HomeController::class,'products'])->name('products');
+Route::get('/product/{id}', [HomeController::class,'product'])->name('product');
 Route::get('/user', [KullaniciController::class,'index'])->name('userlogin');
 Route::get('/user/update/{id}', [KullaniciController::class,'update'])->name('userlogin');
 Route::post('/admin/product/update/{id}',[UrunController::class,'update'])->name('update');
@@ -35,6 +36,7 @@ Route::get('/register', [HomeController::class,'register'])->name('register');
 Route::post('/userlogincheck', [HomeController::class,'userlogincheck'])->name('userlogincheck');
     Route::get('/admin/logout', [HomeController::class,'logout'])->name('adminlogout');
  Route::get('/test/{id}/{name}',[HomeController::class,'test'])->whereNumber('id')->whereAlpha('name');
+ Route::get('/shopcart/store/{id}', [SepetController::class,'store'])->name('sepetstore');
 Route::middleware([
     'auth:sanctum',
     config('jetstream.auth_session'),

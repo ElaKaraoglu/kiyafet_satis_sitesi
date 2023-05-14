@@ -22,7 +22,7 @@ return new class extends Migration
             $table->string('renk');
             $table->string('beden');
             $table->string('keywords');
-            $table->integer('miktar');
+            $table->integer('miktar')->nullable();
             $table->string('durum');
             $table->string('resim');
             $table->date('updated_at');

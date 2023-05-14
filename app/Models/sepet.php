@@ -7,5 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class sepet extends Model
 {
+    protected $table = 'sepet';
+
     use HasFactory;
 }

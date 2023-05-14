@@ -15,8 +15,8 @@ return new class extends Migration
     {
         Schema::create('sepet', function (Blueprint $table) {
             $table->integer('sepet_id')->primary();
-            $table->integer('tutar');
-            $table->integer('adet');
+            $table->integer('tutar')->nullable();
+            $table->integer('adet')->nullable();
             $table->foreignId('urun_id');
             $table->foreignId('kullanici_id');
             $table->timestamps();

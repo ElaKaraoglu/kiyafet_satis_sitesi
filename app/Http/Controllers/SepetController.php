@@ -37,8 +37,8 @@ class SepetController extends Controller
     {
            $data=new sepet;
            $data->urun_id=$id;
-           $data->kullanıcı_id;
-           $data->miktar=$request->input('quentity');
+           $data->kullanici_id=1;
+           $data->adet=$request->input('quentity');
            $data->save();
            return route('front.shopcart');
     }
