@@ -30,6 +30,7 @@ Route::get('/login', [HomeController::class,'userlogin'])->name('userlogin');
 Route::get('/products/{id}', [HomeController::class,'products'])->name('products');
 Route::get('/user', [KullaniciController::class,'index'])->name('userlogin');
 Route::get('/user/update/{id}', [KullaniciController::class,'update'])->name('userlogin');
+Route::post('/admin/product/update/{id}',[UrunController::class,'update'])->name('update');
 Route::get('/register', [HomeController::class,'register'])->name('register');
 Route::post('/userlogincheck', [HomeController::class,'userlogincheck'])->name('userlogincheck');
     Route::get('/admin/logout', [HomeController::class,'logout'])->name('adminlogout');
@@ -76,7 +77,7 @@ Route::prefix('admin')->name('admin.')->group(function(){
         Route::get('/create','create')->name('create');
         Route::post('/store','store')->name(('store'));
         Route::get('/edit/{id}','edit')->name('edit');
-        Route::post('/update/{id}','update')->name('update');
+        //Route::post('/update/{id}','update')->name('update');
         Route::get('/show/{id}','show')->name('show');
        Route::get('/destroy/{id}','destroy')->name('destroy');
     });

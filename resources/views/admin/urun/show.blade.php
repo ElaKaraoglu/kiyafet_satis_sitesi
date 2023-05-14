@@ -53,7 +53,7 @@
                 </tr>
                 <tr>
                   <th style="width:30px">Kategori:</th>
-                  <td>{{ \App\Http\Controllers\AdminPanel\KategoriController::getParentsTree($data->kategori,$data->kategori->ad)}}</td>
+                  <td>{{ $data ->kategori_id}}</td>
 
                 </tr>
 
