@@ -152,4 +152,12 @@ class HomeController extends Controller
         'data'=>$data
        ]);
      }
+     public  function product_page()
+    {
+        $data=urunler::all();
+         return view('front.product_page',[
+            'data'=>$data
+         ]);
+
+    }
 }

@@ -25,6 +25,7 @@ class HomeController extends Controller
         }
        return view ('admin.setting',['data' => $data]);
     }
+    
     public  function settingupdate(Request $request)
     {
         $id=$request->input('id');

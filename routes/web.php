@@ -24,7 +24,7 @@ use App\Http\Controllers\SepetController;
 
 Route::get('/',[HomeController::class,'index']);
 Route::post('/admin/logincheck', [HomeController::class,'logincheck'])->name('logincheck');
-
+Route::get('/product_page', [HomeController::class,'product_page'])->name('product_page');
 Route::get('/admin/login', [HomeController::class,'login'])->name('adminlogin');
 Route::get('/login', [HomeController::class,'userlogin'])->name('userlogin');
 Route::get('/products/{id}', [HomeController::class,'products'])->name('products');
