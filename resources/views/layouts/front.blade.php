@@ -28,9 +28,8 @@
 <body>
 
 @include('front.topbar')
-
+@include('front.navbar')
 @yield('content')
-@yield('navbar')
 @include('front.footer')
 
 

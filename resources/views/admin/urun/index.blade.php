@@ -45,7 +45,7 @@
                 <tr>
                   <td>{{$rs->id}}</td>
                   <td>{{$rs->ad}}</td>
-                  <td >{{$rs->kategori_id}}</td>
+                  <td>{{ \App\Http\Controllers\AdminPanel\KategoriController::getParentsTree($rs->kategori,$rs->kategori->ad)}}</td>
 
                   <td>{{$rs->fiyat}}</td>
                   <td>{{$rs->beden}}</td>

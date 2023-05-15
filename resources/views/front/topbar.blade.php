@@ -1,30 +1,21 @@
 <div class="container-fluid">
         <div class="row bg-primary py-2 px-xl-5">
             <div class="col-lg-6 d-none d-lg-block">
-                <div class="d-inline-flex align-items-center">
-                    <a class="text-dark" href="">FAQs</a>
-                    <span class="text-muted px-2">|</span>
-                    <a class="text-dark" href="">Help</a>
-                    <span class="text-muted px-2">|</span>
-                    <a class="text-dark" href="">Support</a>
+                <div class="d-inline-flex align-items-center">                                    
                 </div>
             </div>
             <div class="col-lg-6 text-center text-lg-right">
                 <div class="d-inline-flex align-items-center">
                     <a class="text-dark px-2" href="">
-                        <i class="fab fa-facebook-f"></i>
+                       
                     </a>
-                    <a class="text-dark px-2" href="">
-                        <i class="fab fa-twitter"></i>
+                    <a class="text-dark px-2" href="">     
                     </a>
-                    <a class="text-dark px-2" href="">
-                        <i class="fab fa-linkedin-in"></i>
+                    <a class="text-dark px-2" href="">                     
                     </a>
-                    <a class="text-dark px-2" href="">
-                        <i class="fab fa-instagram"></i>
+                    <a class="text-dark px-2" href="">                    
                     </a>
-                    <a class="text-dark pl-2" href="">
-                        <i class="fab fa-youtube"></i>
+                    <a class="text-dark pl-2" href="">                     
                     </a>
                 </div>
             </div>
@@ -52,7 +43,7 @@
                     <i class="fas fa-heart text-primary"></i>
                     <span class="badge">0</span>
                 </a>
-                <a href="/shopcart" class="btn border">
+                <a href="" class="btn border">
                     <i class="fas fa-shopping-cart text-primary"></i>
                     <span class="badge">0</span>
                 </a>
