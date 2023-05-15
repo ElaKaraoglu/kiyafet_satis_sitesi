@@ -28,27 +28,56 @@
             <div class="box-header" >
               <h3 class="box-title">Düzenle</h3>
             </div>
-
-            <form action="{{route('admin.product.update',['id'=>$data->id])}}" role="form" method="post">
+            <form action="/admin/product/update/{{$data->id}}" role="form" method="post">
                 @csrf
-              <div class="box-body">
-              <div class="form-group">
-                  <label>Ana Kategori</label>
-                  <!--<select class="form-control" name="parent_id">
-                  <option value="0">Ana kategori</option>
+                <div class="box-body">
+            <div class="form-group">
+                  <label for="exampleInputEmail1">Kategori:</label>
+                  <select class="form-control" name="category_id" >
                     @foreach($datalist as $rs)
-                    <option value="{{$rs->id}}">{{$rs->id}}
-                    </option>
+                    <option>{{$rs->id}}</option>
                     @endforeach
-                  </select>-->
-              </div>
+                    </select>
+                </div>
+              <div class="box-body">
                 <div class="form-group">
-                  <label for="exampleInputEmail1">Kategori Adı:</label>
-                  <input type="text" class="form-control" id="exampleInputEmail1" name="name" value="{{$data->ad}}">
+                  <label for="exampleInputEmail1">Ürün Adı:</label>
+                  <input type="text" class="form-control" id="exampleInputEmail1" value="{{$data->ad}}" name="name" placeholder="Adı">
+                </div>
+
+                <div class="box-body">
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Ürün Açıklaması:</label>
+                  <input type="text" class="form-control" id="exampleInputEmail1" value="{{$data->aciklama}}" name="description" placeholder="Açıklama">
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Fiyat:</label>
+                  <input type="text" class="form-control" id="exampleInputEmail1" value="{{$data->fiyat}}" name="price" placeholder="Fiyat">
+                </div>
+
+                <div class="form-group"> 
+                <label for="exampleInputEmail1">Renk:</label>
+                  <input type="text" class="form-control" id="exampleInputEmail1" value="{{$data->renk}}" name="color" placeholder="Adı">
                 </div>
                 <div class="form-group">
                   <label for="exampleInputPassword1">Anahtar Kelimeler:</label>
-                  <input type="text" class="form-control" id="exampleInputPassword1" name="keywords" value="{{$data->keywords}}" >
+                  <input type="text" class="form-control" id="exampleInputPassword1" value="{{$data->keywords}}" placeholder="Anahtar Kelimeler" name="keywords">
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Miktar:</Kelimelerlabel>
+                  <input type="text" class="form-control" id="exampleInputPassword1" value="{{$data->miktar}}" placeholder="Miktar" name="quantity">
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Beden:</label>
+                  <select class="form-control" value="{{$data->beden}}" name="size">
+                    <option>xs</option>
+                    <option>s</option>
+                    <option>m</option>
+                    <option>l</option>
+                    <option>xl</option>
+                    <option>st</option>
+                  </select>
+                </div>
                 <div class="form-group">
                   <label>Durumu</label>
                   <select class="form-control" name="status" >
@@ -59,11 +88,9 @@
                 </div>
                 <div class="form-group">
                   <label for="exampleInputFile">Kategori Resmi Seç:</label>
-                  <input type="file" id="exampleInputFile", name="image" value="{{$data->resim}}">
+                  <input type="file" id="exampleInputFile" value="{{$data->resim}}", name="image">
 
                 </div>
-
-              </div>
               <div class="box-footer">
                 <button type="submit" class="btn btn-primary">Güncelle</button>
               </div>
