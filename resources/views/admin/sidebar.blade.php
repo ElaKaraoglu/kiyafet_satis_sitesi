@@ -24,16 +24,11 @@
         <!-- sidebar menu: : style can be found in sidebar.less -->
         <ul class="sidebar-menu">
             <li class="header">Panel</li>
-            <li class="treeview">
-                <a href="#">
-                    <i class="fa fa-dashboard"></i> <span>Siparişler</span> <i class="fa fa-angle-left pull-right"></i>
+            <li >
+                <a href="/admin/onaylanan_siparisler_index">
+                    <i class="fa fa-dashboard"></i> <span>Siparişler</span> 
                 </a>
-                <ul class="treeview-menu">
-                    <li><a href="{{asset('assets')}}/admin/index.html"><i class="fa fa-circle-o"></i> Yeni Siparişler</a></li>
-                    <li><a href="{{asset('assets')}}/admin/index2.html"><i class="fa fa-circle-o"></i> Onaylanan Siparişler</a></li>
-                    <li><a href="{{asset('assets')}}/admin/index2.html"><i class="fa fa-circle-o"></i> Onaylanmayan Siparişler</a></li>
-                    <li><a href="{{asset('assets')}}/admin/index2.html"><i class="fa fa-circle-o"></i> Tamamlanmış siparişler</a></li>
-                </ul>
+
             </li>
 
             <li >
@@ -48,25 +43,7 @@
                 </a>
 
             </li>
-            <li >
-                <a href="/admin/comments">
-                    <i class="fa fa-th"></i> <span>Yorumlar</span>
-                </a>
 
-            </li>
-            <li >
-                <a href="/admin/faqs">
-                    <i class="fa fa-th"></i> <span>FAQ</span>
-                </a>
-
-            </li>
-            <li >
-                <a href="/admin/messages">
-                    <i class="fa fa-th"></i> <span>Mesajlar</span>
-                </a>
-
-            </li>
-            <li >
                 <a href="/admin/users">
                     <i class="fa fa-th"></i> <span>Kullanıcılar</span>
                 </a>

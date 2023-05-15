@@ -27,6 +27,10 @@ return new class extends Migration
             $table->string('resim');
             $table->date('updated_at');
             $table->date('created_at');
+            $table->foreignId('kategori_id')
+            ->references('id')
+            ->on('kategoriler');
+
 
         });
     }

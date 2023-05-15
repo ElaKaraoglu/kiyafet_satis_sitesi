@@ -33,9 +33,9 @@
                 <div class="box-body">
             <div class="form-group">
                   <label for="exampleInputEmail1">Kategori:</label>
-                  <select class="form-control" name="category_id" >
+                  <select class="form-control" name="category_name" >
                     @foreach($datalist as $rs)
-                    <option>{{$rs->id}}</option>
+                    <option>{{$rs->ad}}</option>
                     @endforeach
                     </select>
                 </div>
@@ -55,7 +55,7 @@
                   <input type="text" class="form-control" id="exampleInputEmail1" value="{{$data->fiyat}}" name="price" placeholder="Fiyat">
                 </div>
 
-                <div class="form-group"> 
+                <div class="form-group">
                 <label for="exampleInputEmail1">Renk:</label>
                   <input type="text" class="form-control" id="exampleInputEmail1" value="{{$data->renk}}" name="color" placeholder="Adı">
                 </div>

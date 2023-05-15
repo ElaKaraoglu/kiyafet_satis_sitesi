@@ -35,7 +35,7 @@
 
 </head>
 <body>
-@include('front.topbar')
+@include('front.header')
 <div class="banner_section layout_padding">
 
 
@@ -121,7 +121,7 @@
                       <div class="post product-data">
 
 
-                        <mark>Ürün Açıklaması: </mark>{{$data ->aciklama}}
+                        <mark>Ürün Açıklaması: </mark> Ürün nako telden çrülmüştür boyu 100 cm eni 45 kol boyu 60 cm dir kışlıktr
                         <br>
                         <br>
                            Renk: {{$data->renk}}
@@ -201,7 +201,7 @@
                         <div style="float:left; width:250px; padding:8px 0; border-radius:5px; border:1px solid #eee; background-color:#eee; ">
           <div style="float:left; width:60px; margin-left:15px; line-height:30px;"><b>Adet</b></div>
           <div style="float:left; line-height:30px;">
-           <select size="1" name="quantity" style="width: 50px; height: 28px; border: 1px solid #CCCCCC">
+           <select size="1" name="adet" style="width: 50px; height: 28px; border: 1px solid #CCCCCC">
 		   <option value="1" selected="">1</option>
            <option value="2" >2</option>
            <option value="3" >3</option>
@@ -238,6 +238,7 @@
                 </div>
 </div>
 
+@include('front.contact')
 @include('front.footer')
 </body>
 </html>

@@ -61,7 +61,8 @@ Route::prefix('admin')->name('admin.')->group(function(){
     Route::get('/',[AdminHomeController::class,'index'])->name('adminindex');
     Route::get('/setting',[AdminHomeController::class,'setting'])->name('setting');
     Route::post('/setting',[AdminHomeController::class,'settingupdate'])->name('setting.update');
-
+    Route::get('/onaylanan_siparisler_index',[App\Http\Controllers\AdminPanel\SiparisController::class,'onaylanan_index'])->name('onaylanan_index');
+    Route::get('/onaylanan_siparisler_detay/{id}',[App\Http\Controllers\AdminPanel\SiparisController::class,'onaylanan_detay'])->name('onaylanan_detay');
     Route::prefix('/category')->name('category.')->controller(KategoriController::class)->group(function(){
        Route::get('/','index')->name('index');
         Route::get('/create','create')->name('create');

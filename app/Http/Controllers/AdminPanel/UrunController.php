@@ -50,9 +50,10 @@ class UrunController extends Controller
      */
     public function store(Request $request)
     {
+        $category = kategoriler::find(1);
        $data=new urunler();
 
-       $data->kategori_id=$request->category_id;
+
        $data->ad=$request->name;
        $data->aciklama=$request->description;
        $data->fiyat=$request->price;
@@ -61,6 +62,7 @@ class UrunController extends Controller
        $data->miktar=$request->quantity;
        $data->keywords=$request->keywords;
        $data->durum=$request->status;
+       $data->kategoriler()->associate($category);
 
        if($request->hasfile('image'))
        {
@@ -116,7 +118,7 @@ class UrunController extends Controller
         $data= urunler::find($id);
 
          $data->ad = $request->name;
-         $data->kategori_id = $request->category_id;
+         $data->kategori_id = $request->category_name;
          $data->keywords=$request->keywords;
          $data->durum=$request->status;
          $data->fiyat=$request->price;

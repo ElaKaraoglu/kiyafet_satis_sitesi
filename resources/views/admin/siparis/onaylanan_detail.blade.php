@@ -1,7 +1,4 @@
 @extends('layouts.adminbase')
-@section('title')
-    Admin Paneli
-@endsection
 
 @section('content')
 
@@ -9,7 +6,6 @@
         <!-- Content Header (Page header) -->
         <section class="content-header">
 
-        <a href="/admin/product/create"  class="btn btn-block btn-success btn-lg" style="width: 200px;">+  Ürün Ekle  </a>
 
             <ol class="breadcrumb">
                 <li><a href="#"><i class="fa fa-dashboard"></i> Anasayfa</a></li>
@@ -20,49 +16,46 @@
 
         <div class="box">
             <div class="box-header">
-              <h3 class="box-title"> Ürün Listesi</h3>
+              <h3 class="box-title"> </h3>
+              <h3 class="box-title"> nolu Sipariş Detayı</h3>
             </div>
+
             <div class="box-body">
               <table class="table table-bordered" style="background-color:ivory">
                 <tbody><tr>
                   <th style="width:10px">Id</th>
-                  <th>Ad</th>
-                  <th>Kategori</th>
+                  <th>Ürün Adı</th>
+                  <th>Kategori Adı</th>
 
                   <th>Fiyat</th>
                   <th>Beden</th>
                   <th>Renk</th>
-                  <th>Anahtar Kelimeler</th>
-                  <th>Miktar</th>
-                  <th>Durum</th>
+                  <th>Adet</th>
                   <th>Resim</th>
-                  <th style="width:40px">Düzenle</th>
-                  <th style="width:40px">Sil</th>
-                  <th style="width:40px">Göster</th>
+
                 </tr>
 
-             @foreach($data as $rs)
-                <tr>
-                  <td>{{$rs->id}}</td>
-                  <td>{{$rs->ad}}</td>
-                  <td >{{$rs->getkategori->ad}}</td>
 
-                  <td>{{$rs->fiyat}}</td>
-                  <td>{{$rs->beden}}</td>
-                  <td>{{$rs->renk}}</td>
-                  <td>{{$rs->keywords}}</td>
-                  <td>{{$rs->miktar}}</td>
-                  <td>{{$rs->durum}}</td>
+                <tr>
+                  <td>{{$data->id}}</td>
+                  <td>{{$data->geturun->ad}}</td>
+                  <td>{{$data->geturun->getkategori->ad}}</td>
+
+                  <td>{{$data->geturun->fiyat}}</td>
+
+                  <td>{{$data->geturun->beden}}</td>
+                  <td>{{$data->geturun->renk}}</td>
+                  <td>{{$data->geturun->adet}}</td>
+
+
                   <td>
-                    <img src="{{Storage::url($rs->resim)}}" style="height: 50px;">
+                  {{$data->geturun->resim}}
 
                   </td>
-                  <td><a href="/admin/product/edit/{{$rs->id}}"  class="btn btn-block btn-primary btn-xs" >Düzenle</td>
-                  <td><a href="/admin/product/destroy/{{$rs->id}}"  class="btn btn-block btn-danger btn-xs">Sil</td>
-                  <td><a href="/admin/product/show/{{$rs->id}}"  class="btn btn-block btn-warning btn-xs">Göster</td>
+
+
                 </tr>
 
-           @endforeach
               </tbody></table>
             </div>
             <div class="box-footer clearfix">
@@ -79,4 +72,5 @@
     </div><!-- /.content-wrapper -->
 
 @endsection
+
 

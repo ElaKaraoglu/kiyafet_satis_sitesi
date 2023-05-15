@@ -10,4 +10,5 @@ class sepet extends Model
     protected $table = 'sepet';
 
     use HasFactory;
+   
 }

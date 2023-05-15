@@ -1,13 +1,16 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\AdminPanel;
 
-use App\Models\sepet;
-use App\Models\sepets;
+use App\Http\Controllers\Controller;
+use App\Models\kategoriler;
+use App\Models\siparisler;
 use App\Models\urunler;
 use Illuminate\Http\Request;
 
-class SepetController extends Controller
+
+
+class SiparisController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -16,37 +19,33 @@ class SepetController extends Controller
      */
     public function index()
     {
-        $sepet = sepet::first();
-         
+        //
+    }
 
-$urunler=[];
- $i=0;
- $total=0;
+    public function onaylanan_index()
+    {
+       $data=siparisler::all();
+       return view('admin.siparis.onaylanan_siparisler_index',[
+        'data'=>$data
+       ]);
+    }
 
-    $urun_id = $sepet->urun_id;
+    public function onaylanan_detay($id)
+    {
+       $data=siparisler::find($id)::with('detaylar')->get();
 
-    $urunler[$i] = urunler::find($urun_id);
-    $total=$urunler[$i]->fiyat+$total;
-    $i++;
-    // diğer ürün özelliklerini burada kullanabilirsiniz
-
-
-return view('front.shopcart',[
-    'datalist'=>$urunler ,
-    'total'=>$total,
-    'data'=>$sepet
-
-   ]);
+        $maindata= $data[0]->detaylar[0];
+        return view('admin.siparis.onaylanan_detail',[ 'data'=>$maindata]);
 
 
-    /*$product=urunler::find(20);
-   */
+
+     //  $detaylar=$data->getsiparisdetay;return
 
 
-}
-
+    }
     /**
-     * Show the form for creating a new resource.
+     * Show the form for creating a new resource. view('admin.siparis.onaylanan_detail',[ 'data'=>$data]);
+
      *
      * @return \Illuminate\Http\Response
      */
@@ -61,14 +60,9 @@ return view('front.shopcart',[
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request,$id)
+    public function store(Request $request)
     {
-           $data=new sepet();
-           $data->urun_id=$id;
-
-           $data->kullanici_id=1;
-           $data->save();
-
+        //
     }
 
     /**
@@ -111,12 +105,8 @@ return view('front.shopcart',[
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy(sepet $sepet, $id)
-
+    public function destroy($id)
     {
-        $data = sepet::where('urun_id',$id)->first();
-        $data->delete();
-
-
+        //
     }
 }

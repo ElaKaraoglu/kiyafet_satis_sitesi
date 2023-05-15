@@ -12,9 +12,10 @@ class urunler extends Model
 
    #burada da bir çok ürünün 1 kategoriyle ilişkisi olduğunu söylüyorum many to one
 
-   public function kategori():BelongsTo
+   public function getkategori()
    {
-      return $this->belongsTo(kategoriler::class);
+      return $this->belongsTo('App\Models\kategoriler','kategori_id','id');
    }
+
 
 }
