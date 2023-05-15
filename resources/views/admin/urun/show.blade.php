@@ -92,9 +92,9 @@
 
                 <tr>
                   <th style="width:30px">Resim:</th>
-                  <td>{{$data->resim}}</td>
-
-                </tr>
+                  <td> <img src="{{Storage::url($rs->resim)}}" style="height: 50px" alt="">
+                </td>
+              </tr>
 
                 <tr>
                   <th style="width:30px">Oluşturma Zamanı:</th>

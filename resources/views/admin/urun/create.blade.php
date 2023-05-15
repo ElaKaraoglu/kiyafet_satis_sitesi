@@ -84,7 +84,7 @@
                 </div>
                 <div class="form-group">
                   <label for="exampleInputFile">Kategori Resmi Seç:</label>
-                  <input type="file" id="exampleInputFile", name="image">
+                  <img src="{{Storage::url($rs->resim)}}" style="height: 50px" alt="">
 
                 </div>
 
