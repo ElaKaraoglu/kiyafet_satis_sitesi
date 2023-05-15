@@ -23,6 +23,12 @@ use App\Http\Controllers\SepetController;
 */
 
 Route::get('/',[HomeController::class,'index']);
+<<<<<<< HEAD
+
+Route::get('/ep',[HomeController::class,'erkek_pantolon_getir']);
+
+=======
+>>>>>>> a66f64cf2380634aa83b4c1bc09cad791031b588
 Route::get('/ecpan',[HomeController::class,'product_ecpan']);
 Route::get('/ecust',[HomeController::class,'product_ecust']);
 Route::get('/ecay',[HomeController::class,'product_ecay']);
@@ -45,6 +51,10 @@ Route::get('/es',[HomeController::class,'product_es']);
 Route::get('/eka',[HomeController::class,'product_eka']);
 Route::get('/epan',[HomeController::class,'product_epan']);
 Route::get('/et',[HomeController::class,'product_et']);
+<<<<<<< HEAD
+
+=======
+>>>>>>> a66f64cf2380634aa83b4c1bc09cad791031b588
 Route::post('/admin/logincheck', [HomeController::class,'logincheck'])->name('logincheck');
 Route::get('/product_page', [HomeController::class,'product_page'])->name('product_page');
 Route::get('/admin/login', [HomeController::class,'login'])->name('adminlogin');
