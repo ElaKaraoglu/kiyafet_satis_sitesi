@@ -14,8 +14,8 @@ class HomeController extends Controller
 
    public function index()
    {
-
-       return view('front.index');
+       $data=kategoriler::all();
+       return view('front.index',['data'=>$data]);
    }
    public function product($id)
    {
@@ -155,9 +155,23 @@ class HomeController extends Controller
      public  function product_page()
     {
         $data=urunler::all();
+        echo $data[0]->kategori_id;
          return view('front.product_page',[
             'data'=>$data
          ]);
+
+
+    }
+
+    public function erkek_pantolon_getir()
+    {
+      $data=urunler::where('kategori_id',1)->get();
+      $maindata=$data[0];
+      return view('front.product_page',[
+        'data'=>$maindata
+     ]);
+
+
 
     }
     public  function product_ecpan()

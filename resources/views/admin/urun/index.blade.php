@@ -53,8 +53,9 @@
                   <td>{{$rs->miktar}}</td>
                   <td>{{$rs->durum}}</td>
                   <td>
-                    <img src="{{Storage::url($rs->resim)}}" style="height: 50px;">
-
+                    @if($rs->image)
+                    <img src="{{storage::url($rs->resim)}}" style="">
+                    @endif
                   </td>
                   <td><a href="/admin/product/edit/{{$rs->id}}"  class="btn btn-block btn-primary btn-xs" >Düzenle</td>
                   <td><a href="/admin/product/destroy/{{$rs->id}}"  class="btn btn-block btn-danger btn-xs">Sil</td>
