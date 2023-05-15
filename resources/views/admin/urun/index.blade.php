@@ -46,7 +46,6 @@
                   <td>{{$rs->id}}</td>
                   <td>{{$rs->ad}}</td>
                   <td >{{$rs->getkategori->ad}}</td>
-
                   <td>{{$rs->fiyat}}</td>
                   <td>{{$rs->beden}}</td>
                   <td>{{$rs->renk}}</td>

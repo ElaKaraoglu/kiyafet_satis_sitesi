@@ -3,7 +3,7 @@
 @section('content')
 <div class="container-fluid pt-5">
         <div class="text-center mb-4">
-            <h2 class="section-title px-5"><span class="px-2">Trandy Products</span></h2>
+            <h2 class="section-title px-5"><span class="px-2">ÜRÜNLER</span></h2>
         </div>
         <div class="row px-xl-5 pb-3">
 
@@ -19,7 +19,7 @@
                         </div>
                     </div>
                     <div class="card-footer d-flex justify-content-between bg-light border">
-                        <a href="" class="btn btn-sm text-dark p-0"><i class="fas fa-eye text-primary mr-1"></i>Detay</a>
+                        <a href="/products/{id}" class="btn btn-sm text-dark p-0"><i class="fas fa-eye text-primary mr-1"></i>Detay</a>
                     </div>
                 </div>
             </div>
