@@ -155,7 +155,6 @@ class HomeController extends Controller
      public  function product_page()
     {
         $data=urunler::all();
-        echo $data[0]->kategori_id;
          return view('front.product_page',[
             'data'=>$data
          ]);

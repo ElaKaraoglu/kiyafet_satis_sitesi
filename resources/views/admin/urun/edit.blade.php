@@ -28,7 +28,7 @@
             <div class="box-header" >
               <h3 class="box-title">Düzenle</h3>
             </div>
-            <form action="/admin/product/update/{{$data->id}}" role="form" method="post">
+            <form action="/admin/product/update/{{$data->id}}" role="form" method="post" enctype="multipart/form-data">
                 @csrf
                 <div class="box-body">
             <div class="form-group">
