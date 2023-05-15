@@ -57,8 +57,8 @@
           <a href="#" class="btn btn-block btn-social btn-google-plus btn-flat"><i class="fa fa-google-plus"></i> Sign in using Google+</a>
         </div><!-- /.social-auth-links -->
 
-        <a href="#">I forgot my password</a><br>
-        <a href="register.html" class="text-center">Register a new membership</a>
+        <a href="#">Şifremi unuttum</a><br>
+        <a href="register.html" class="text-center">Yeni üye kaydı</a>
 
       </div><!-- /.login-box-body -->
     </div><!-- /.login-box -->

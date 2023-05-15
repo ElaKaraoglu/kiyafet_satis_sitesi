@@ -3,5 +3,4 @@
   @include('front.navbar')
 @endsection('content')
 @section('content')
-  içerik
 @endsection('content')
