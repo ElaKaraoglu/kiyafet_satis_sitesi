@@ -162,18 +162,6 @@ class HomeController extends Controller
 
 
     }
-
-    public function erkek_pantolon_getir()
-    {
-      $data=urunler::where('kategori_id',1)->get();
-      $maindata=$data[0];
-      return view('front.product_page',[
-        'data'=>$maindata
-     ]);
-
-
-
-    }
     public  function product_ecpan()
     {
         $data=urunler::where('kategori_id',22)->get();

@@ -9,6 +9,7 @@
                     <div class="navbar-nav w-100 overflow-hidden" style="height: 410px">
 
                     <div class="nav-item dropdown">
+<<<<<<< HEAD
 
                             <a href="#" class="nav-link" data-toggle="dropdown">ERKEK ÇOCUK<i class="fa fa-angle-down float-right mt-1"></i></a>
                             <div class="dropdown-menu position-absolute bg-secondary border-0 rounded-0 w-100 m-0">
@@ -21,6 +22,9 @@
                      <div class="nav-item dropdown">
                             <a href="#" class="nav-link" data-toggle="dropdown">KIZ ÇOCUK <i class="fa fa-angle-down float-right mt-1"></i></a>
 
+=======
+
+>>>>>>> a66f64cf2380634aa83b4c1bc09cad791031b588
                             <a href="/ec" class="nav-link" data-toggle="dropdown">ERKEK ÇOCUK <i class="fa fa-angle-down float-right mt-1"></i></a>
                             <div class="dropdown-menu position-absolute bg-secondary border-0 rounded-0 w-100 m-0">
                             <a href="/ecpan" class="dropdown-item">PANTOLON</a>
@@ -30,7 +34,10 @@
                         </div>
                         <div class="nav-item dropdown">
                             <a href="/kc" class="nav-link" data-toggle="dropdown">KIZ ÇOCUK <i class="fa fa-angle-down float-right mt-1"></i></a>
+<<<<<<< HEAD
 
+=======
+>>>>>>> a66f64cf2380634aa83b4c1bc09cad791031b588
                             <div class="dropdown-menu position-absolute bg-secondary border-0 rounded-0 w-100 m-0">
                                 <a href="/kce" class="dropdown-item">ELBİSE</a>
                                 <a href="/kcust" class="dropdown-item">ÜST</a>
