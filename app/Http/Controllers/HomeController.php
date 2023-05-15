@@ -160,4 +160,330 @@ class HomeController extends Controller
          ]);
 
     }
+    public  function product_ecpan()
+    {
+        $data=urunler::where('kategori_id',22)->get();
+        $urunler=[];
+        $i=0;
+        $total=0;
+       foreach ($data as $urun) {
+           $urunler[$i] = $urun;
+           $i++;
+           // diğer ürün özelliklerini burada kullanabilirsiniz
+       }
+        return view('front.product_page',[
+            'data'=>$urunler
+         ]);
+
+    }
+    public  function product_ecust()
+    {
+        $data=urunler::where('kategori_id',23)->get();
+        $urunler=[];
+        $i=0;
+        $total=0;
+       foreach ($data as $urun) {
+           $urunler[$i] = $urun;
+           $i++;
+       }
+        return view('front.product_page',[
+            'data'=>$urunler
+         ]);
+    }
+    public  function product_ecay()
+    {
+        $data=urunler::where('kategori_id',24)->get();
+        $urunler=[];
+        $i=0;
+        $total=0;
+       foreach ($data as $urun) {
+           $urunler[$i] = $urun;
+           $i++;
+       }
+        return view('front.product_page',[
+            'data'=>$urunler
+         ]);
+
+    }
+    public  function product_kcay()
+    {
+        $data=urunler::where('kategori_id',21)->get();
+        $urunler=[];
+        $i=0;
+        $total=0;
+       foreach ($data as $urun) {
+           $urunler[$i] = $urun;
+           $i++;
+       }
+        return view('front.product_page',[
+            'data'=>$urunler
+         ]);
+    }
+    public  function product_kce()
+    {
+        $data=urunler::where('kategori_id',18)->get();
+        $urunler=[];
+        $i=0;
+        $total=0;
+       foreach ($data as $urun) {
+           $urunler[$i] = $urun;
+           $i++;
+       }
+        return view('front.product_page',[
+            'data'=>$urunler
+         ]);
+
+    }
+    public  function product_kcust()
+    {
+        $data=urunler::where('kategori_id',19)->get();
+        $urunler=[];
+        $i=0;
+        $total=0;
+       foreach ($data as $urun) {
+           $urunler[$i] = $urun;
+           $i++;
+       }
+        return view('front.product_page',[
+            'data'=>$urunler
+         ]);
+
+    }
+    public  function product_kcpan()
+    {
+        $data=urunler::where('kategori_id',20)->get();
+        $urunler=[];
+        $i=0;
+        $total=0;
+       foreach ($data as $urun) {
+           $urunler[$i] = $urun;
+           $i++;
+       }
+        return view('front.product_page',[
+            'data'=>$urunler
+         ]);
+
+    }
+    public  function product_epan()
+    {
+        $data=urunler::where('kategori_id',15)->get();
+        $urunler=[];
+        $i=0;
+        $total=0;
+       foreach ($data as $urun) {
+           $urunler[$i] = $urun;
+           $i++;
+       }
+        return view('front.product_page',[
+            'data'=>$urunler
+         ]);
+
+    }
+    public  function product_et()
+    {
+        $data=urunler::where('kategori_id',16)->get();
+        $urunler=[];
+        $i=0;
+        $total=0;
+       foreach ($data as $urun) {
+           $urunler[$i] = $urun;
+           $i++;
+       }
+        return view('front.product_page',[
+            'data'=>$urunler
+         ]);
+
+    }
+    public  function product_eka()
+    {
+        $data=urunler::where('kategori_id',14)->get();
+        $urunler=[];
+        $i=0;
+        $total=0;
+       foreach ($data as $urun) {
+           $urunler[$i] = $urun;
+           $i++;
+       }
+        return view('front.product_page',[
+            'data'=>$urunler
+         ]);
+    }
+    public  function product_es()
+    {
+        $data=urunler::where('kategori_id',12)->get();
+        $urunler=[];
+        $i=0;
+        $total=0;
+       foreach ($data as $urun) {
+           $urunler[$i] = $urun;
+           $i++;
+       }
+        return view('front.product_page',[
+            'data'=>$urunler
+         ]);
+    }
+    public  function product_kay()
+    {
+        $data=urunler::where('kategori_id',11)->get();
+        $urunler=[];
+        $i=0;
+        $total=0;
+       foreach ($data as $urun) {
+           $urunler[$i] = $urun;
+           $i++;
+       }
+        return view('front.product_page',[
+            'data'=>$urunler
+         ]);
+    }
+    public  function product_kust()
+    {
+        $data=urunler::where('kategori_id',7)->get();
+        $urunler=[];
+        $i=0;
+        $total=0;
+       foreach ($data as $urun) {
+           $urunler[$i] = $urun;
+           $i++;
+       }
+        return view('front.product_page',[
+            'data'=>$urunler
+         ]);
+
+    }
+    public  function product_kpan()
+    {
+        $data=urunler::where('kategori_id',6)->get();
+        $urunler=[];
+        $i=0;
+        $total=0;
+       foreach ($data as $urun) {
+           $urunler[$i] = $urun;
+           $i++;
+       }
+        return view('front.product_page',[
+            'data'=>$urunler
+         ]);
+
+    }
+    public  function product_kel()
+    {
+        $data=urunler::where('kategori_id',8)->get();
+        $urunler=[];
+        $i=0;
+        $total=0;
+       foreach ($data as $urun) {
+           $urunler[$i] = $urun;
+           $i++;
+       }
+        return view('front.product_page',[
+            'data'=>$urunler
+         ]);
+
+    }
+    public  function product_kaks()
+    {
+        $data=urunler::where('kategori_id',9)->get();
+        $urunler=[];
+        $i=0;
+        $total=0;
+       foreach ($data as $urun) {
+           $urunler[$i] = $urun;
+           $i++;
+       }
+        return view('front.product_page',[
+            'data'=>$urunler
+         ]);
+
+    }
+    public  function product_km()
+    {
+        $data=urunler::where('kategori_id',10)->get();
+        $urunler=[];
+        $i=0;
+        $total=0;
+       foreach ($data as $urun) {
+           $urunler[$i] = $urun;
+           $i++;
+       }
+        return view('front.product_page',[
+            'data'=>$urunler
+         ]);
+
+    }
+    public  function product_ket()
+    {
+        $data=urunler::where('kategori_id',5)->get();
+        $urunler=[];
+        $i=0;
+        $total=0;
+       foreach ($data as $urun) {
+           $urunler[$i] = $urun;
+           $i++;
+       }
+        return view('front.product_page',[
+            'data'=>$urunler
+         ]);
+
+    }
+    public  function product_k()
+    {
+        $data=urunler::where('kategori_id',1)->get();
+        $urunler=[];
+        $i=0;
+        $total=0;
+       foreach ($data as $urun) {
+           $urunler[$i] = $urun;
+           $i++;
+       }
+        return view('front.product_page',[
+            'data'=>$urunler
+         ]);
+
+    }
+    public  function product_ec()
+    {
+        $data=urunler::where('kategori_id',4)->get();
+        $urunler=[];
+        $i=0;
+        $total=0;
+       foreach ($data as $urun) {
+           $urunler[$i] = $urun;
+           $i++;
+       }
+        return view('front.product_page',[
+            'data'=>$urunler
+         ]);
+
+    }
+    public  function product_kc()
+    {
+        $data=urunler::where('kategori_id',3)->get();
+        $urunler=[];
+        $i=0;
+        $total=0;
+       foreach ($data as $urun) {
+           $urunler[$i] = $urun;
+           $i++;
+       }
+        return view('front.product_page',[
+            'data'=>$urunler
+         ]);
+    }
+    public  function product_e()
+    {
+        $data=urunler::where('kategori_id',2)->get();
+        $urunler=[];
+        $i=0;
+        $total=0;
+       foreach ($data as $urun) {
+           $urunler[$i] = $urun;
+           $i++;
+       }
+        return view('front.product_page',[
+            'data'=>$urunler
+         ]);
+
+    }
+
 }

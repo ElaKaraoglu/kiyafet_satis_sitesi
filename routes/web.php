@@ -23,6 +23,28 @@ use App\Http\Controllers\SepetController;
 */
 
 Route::get('/',[HomeController::class,'index']);
+Route::get('/ecpan',[HomeController::class,'product_ecpan']);
+Route::get('/ecust',[HomeController::class,'product_ecust']);
+Route::get('/ecay',[HomeController::class,'product_ecay']);
+Route::get('/ec',[HomeController::class,'product_ec']);
+Route::get('/kc',[HomeController::class,'product_kc']);
+Route::get('/kcpan',[HomeController::class,'product_kcpan']);
+Route::get('/kcust',[HomeController::class,'product_kcust']);
+Route::get('/kce',[HomeController::class,'product_kce']);
+Route::get('/kcay',[HomeController::class,'product_kcay']);
+Route::get('/k',[HomeController::class,'product_k']);
+Route::get('/ket',[HomeController::class,'product_ket']);
+Route::get('/kpan',[HomeController::class,'product_kpan']);
+Route::get('/kust',[HomeController::class,'product_kust']);
+Route::get('/kel',[HomeController::class,'product_kel']);
+Route::get('/kaks',[HomeController::class,'product_kaks']);
+Route::get('/km',[HomeController::class,'product_km']);
+Route::get('/kay',[HomeController::class,'product_kay']);
+Route::get('/e',[HomeController::class,'product_e']);
+Route::get('/es',[HomeController::class,'product_es']);
+Route::get('/eka',[HomeController::class,'product_eka']);
+Route::get('/epan',[HomeController::class,'product_epan']);
+Route::get('/et',[HomeController::class,'product_et']);
 Route::post('/admin/logincheck', [HomeController::class,'logincheck'])->name('logincheck');
 Route::get('/product_page', [HomeController::class,'product_page'])->name('product_page');
 Route::get('/admin/login', [HomeController::class,'login'])->name('adminlogin');
