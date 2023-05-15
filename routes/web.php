@@ -23,6 +23,7 @@ use App\Http\Controllers\SepetController;
 */
 
 Route::get('/',[HomeController::class,'index']);
+Route::get('/ep',[HomeController::class,'erkek_pantolon_getir']);
 Route::post('/admin/logincheck', [HomeController::class,'logincheck'])->name('logincheck');
 Route::get('/product_page', [HomeController::class,'product_page'])->name('product_page');
 Route::get('/admin/login', [HomeController::class,'login'])->name('adminlogin');
