@@ -30,7 +30,7 @@
                   <select class="form-control" name="category_id" >
 
                     @foreach($data as $rs)
-                    <option >{{$rs->getkategori->ad}}</option>
+                    <option >{{$rs->id}}</option>
                     @endforeach
                      </select>
                 </div>
@@ -84,7 +84,7 @@
                 </div>
                 <div class="form-group">
                   <label for="exampleInputFile">Kategori Resmi Seç:</label>
-                  <img src="{{Storage::url($rs->resim)}}" style="height: 50px" alt="">
+                  <input type="file" id="exampleInputFile" value="{{$data->resim}}", name="image">
                 </div>
 
               </div>

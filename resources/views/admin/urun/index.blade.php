@@ -45,7 +45,7 @@
                 <tr>
                   <td>{{$rs->id}}</td>
                   <td>{{$rs->ad}}</td>
-                  <td >{{$rs->getkategori->ad}}</td>
+                  <td >{{$rs->kategori_id}}</td>
                   <td>{{$rs->fiyat}}</td>
                   <td>{{$rs->beden}}</td>
                   <td>{{$rs->renk}}</td>
@@ -54,7 +54,7 @@
                   <td>{{$rs->durum}}</td>
                   <td>
                     @if($rs->image)
-                    <img src="{{storage::url($rs->resim)}}" style="">
+                    <img src="{{storage::url($rs->resim)}}" style="height:50px;">
                     @endif
                   </td>
                   <td><a href="/admin/product/edit/{{$rs->id}}"  class="btn btn-block btn-primary btn-xs" >Düzenle</td>
