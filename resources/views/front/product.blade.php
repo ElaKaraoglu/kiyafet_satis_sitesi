@@ -120,7 +120,7 @@
                       <div class="post product-data">
 
 
-                        <mark>Ürün Açıklaması: </mark> Ürün nako telden çrülmüştür boyu 100 cm eni 45 kol boyu 60 cm dir kışlıktr
+                        <mark>Ürün Açıklaması: </mark>{{$data->aciklama}}
                         <br>
                         <br>
                            Renk: {{$data->renk}}

@@ -51,7 +51,7 @@ use Illuminate\Auth\Events\Attempting;
                   <td>{{$rs->durum}}</td>
                   <td>
 
-                         <img src="{{Storage::url($rs->resim)}}" style="height:50px;">
+                  <img src="{{asset('Storage/'.$rs->resim)}}" style="height:50px;">
 
 
 

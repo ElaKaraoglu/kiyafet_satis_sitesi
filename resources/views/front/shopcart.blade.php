@@ -24,7 +24,7 @@
                                 <tr>
                                     <td>
                                         <figure class="itemside align-items-center">
-                                            <div class="aside"><img src="{{Storage::url($rs->resim)}}" class="img-sm"></div>
+                                            <div class="aside"><img src="{{asset('Storage/'.$rs->resim)}}" style="height:80px;">
                                             <figcaption class="info"> <a href="#" class="title text-dark" data-abc="true">{{$rs->ad}}</a>
                                                 <p class="text-muted small">{{$rs->beden}} </p>
                                             </figcaption>

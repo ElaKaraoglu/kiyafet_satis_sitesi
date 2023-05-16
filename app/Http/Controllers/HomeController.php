@@ -15,7 +15,9 @@ class HomeController extends Controller
    public function index()
    {
        $data=kategoriler::all();
-       return view('front.index',['data'=>$data]);
+       $resim1=urunler::find(46);
+       $resim2=urunler::find(90);
+       return view('front.index',['data'=>$data,'resim1'=>$resim1,'resim2'=>$resim2]);
    }
    public function product($id)
    {

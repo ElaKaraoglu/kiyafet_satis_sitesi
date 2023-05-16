@@ -80,7 +80,9 @@
                 <div id="header-carousel" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active" style="height: 410px;">
-                            <img class="img-fluid" src="" alt="Image">
+                        <div style="text-align: center;">
+                            <img class="img-fluid" src="{{asset('Storage/'.$resim1->resim)}}" style="max-width: 350px; height: auto;"  alt="Image">
+                        </div>
                             <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                                 <div class="p-3" style="max-width: 700px;">
                                     <h4 class="text-light text-uppercase font-weight-medium mb-3">MODA'NIN GÖZ BEBEĞİ</h4>
@@ -88,7 +90,9 @@
                             </div>
                         </div>
                         <div class="carousel-item" style="height: 410px;">
-                            <img class="img-fluid" src="{{asset('assets')}}\images\Ekran Resmi 2023-05-10 16.48.21.jpg" alt="Image">
+                        <div style="text-align: center;">
+                            <img class="img-fluid" src="{{asset('Storage/'.$resim2->resim)}}" style="max-width: 350px; height: auto;" alt="Image">
+                        </div>
                             <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                                 <div class="p-3" style="max-width: 700px;">
                                     <h4 class="text-light text-uppercase font-weight-medium mb-3">İNDİRİMLİ ÜRÜNLERİMİZ</h4>
