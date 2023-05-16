@@ -19,11 +19,7 @@
                         </div>
                     </div>
                     <div class="card-footer d-flex justify-content-between bg-light border">
-<<<<<<< HEAD
                         <a href="/product/{{$rs->id}}" class="btn btn-sm text-dark p-0"><i class="fas fa-eye text-primary mr-1"></i>Detay</a>
-=======
-                        <a href="/products/{id}" class="btn btn-sm text-dark p-0"><i class="fas fa-eye text-primary mr-1"></i>Detay</a>
->>>>>>> 18a4452d8e7839837497e17798a2359e02d12fbb
                     </div>
                 </div>
             </div>
