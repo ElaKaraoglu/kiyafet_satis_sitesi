@@ -50,7 +50,6 @@ class UrunController extends Controller
      */
     public function store(Request $request)
     {
-        $category = kategoriler::find(1);
        $data=new urunler();
 
 
@@ -62,11 +61,11 @@ class UrunController extends Controller
        $data->miktar=$request->quantity;
        $data->keywords=$request->keywords;
        $data->durum=$request->status;
-       $data->kategoriler()->associate($category);
+       $data->kategori_id=$request->category_id;
 
        if($request->hasfile('image'))
        {
-         $data->resim=$request->file('image')->store('images');
+         $data->resim=$request->file('image')->store('images','public');
        }
        $data->save();
        return redirect('admin/product');

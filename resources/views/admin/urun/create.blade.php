@@ -84,7 +84,7 @@
                 </div>
                 <div class="form-group">
                   <label for="exampleInputFile">Kategori Resmi Seç:</label>
-                  <input type="file" id="exampleInputFile" value="{{$data->resim}}", name="image">
+                  <input type="file" id="exampleInputFile" value="{{$rs->resim}}", name="image">
                 </div>
 
               </div>
