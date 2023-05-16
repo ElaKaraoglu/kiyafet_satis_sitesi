@@ -35,7 +35,7 @@
                   <label for="exampleInputEmail1">Kategori:</label>
                   <select class="form-control" name="category_name" >
                     @foreach($datalist as $rs)
-                    <option>{{$rs->ad}}</option>
+                    <option>{{$rs->id}}</option>
                     @endforeach
                     </select>
                 </div>

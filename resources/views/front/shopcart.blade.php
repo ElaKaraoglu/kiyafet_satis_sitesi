@@ -24,7 +24,7 @@
                                 <tr>
                                     <td>
                                         <figure class="itemside align-items-center">
-                                            <div class="aside"><img src="{{Storage::url($rs->resim)}}" class="img-sm"></div>
+                                            <div class="aside"><img src="{{asset('Storage/'.$rs->resim)}}" style="height:80px;">
                                             <figcaption class="info"> <a href="#" class="title text-dark" data-abc="true">{{$rs->ad}}</a>
                                                 <p class="text-muted small">{{$rs->beden}} </p>
                                             </figcaption>
@@ -39,7 +39,7 @@
                                     <td>
                                         <div class="price-wrap"> <var class="price">{{$rs->fiyat}} TL</var>  </div>
                                     </td>
-                                    <td class="text-right d-none d-md-block"> <a data-original-title="Save to Wishlist" title="" href="" class="btn btn-light" data-toggle="tooltip" data-abc="true"> <i class="fa fa-heart"></i></a> <a href="/shopcart/destroy/{{$data->urun_id}}" class="btn btn-light" data-abc="true"> Sil</a> </td>
+                                    <td class="text-right d-none d-md-block">  <a href="/shopcart/destroy/{{$data->urun_id}}" class="btn btn-light" data-abc="true"> Sil</a> </td>
                                 </tr>
                            @endforeach
                             </tbody>

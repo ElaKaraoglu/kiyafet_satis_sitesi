@@ -19,24 +19,24 @@ class SepetController extends Controller
         $sepet = sepet::first();
 
 
-$urunler=[];
- $i=0;
- $total=0;
+        $urunler=[];
+        $i=0;
+        $total=0;
 
-    $urun_id = $sepet->urun_id;
+        $urun_id = $sepet->urun_id;
 
-    $urunler[$i] = urunler::find($urun_id);
-    $total=$urunler[$i]->fiyat+$total;
-    $i++;
-    // diğer ürün özelliklerini burada kullanabilirsiniz
+        $urunler[$i] = urunler::find($urun_id);
+        $total=$urunler[$i]->fiyat+$total;
+        $i++;
+        // diğer ürün özelliklerini burada kullanabilirsiniz
 
 
-return view('front.shopcart',[
-    'datalist'=>$urunler ,
-    'total'=>$total,
-    'data'=>$sepet
+        return view('front.shopcart',[
+        'datalist'=>$urunler ,
+        'total'=>$total,
+        'data'=>$sepet
 
-   ]);
+        ]);
 
 
     /*$product=urunler::find(20);
@@ -65,10 +65,9 @@ return view('front.shopcart',[
     {
            $data=new sepet();
            $data->urun_id=$id;
-
            $data->kullanici_id=1;
            $data->save();
-
+           return redirect('/shopcart');
     }
 
     /**
