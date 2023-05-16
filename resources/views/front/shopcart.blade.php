@@ -39,7 +39,7 @@
                                     <td>
                                         <div class="price-wrap"> <var class="price">{{$rs->fiyat}} TL</var>  </div>
                                     </td>
-                                    <td class="text-right d-none d-md-block"> <a data-original-title="Save to Wishlist" title="" href="" class="btn btn-light" data-toggle="tooltip" data-abc="true"> <i class="fa fa-heart"></i></a> <a href="/shopcart/destroy/{{$data->urun_id}}" class="btn btn-light" data-abc="true"> Sil</a> </td>
+                                    <td class="text-right d-none d-md-block">  <a href="/shopcart/destroy/{{$data->urun_id}}" class="btn btn-light" data-abc="true"> Sil</a> </td>
                                 </tr>
                            @endforeach
                             </tbody>
