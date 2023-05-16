@@ -17,7 +17,7 @@ class SepetController extends Controller
     public function index()
     {
         $sepet = sepet::first();
-         
+
 
 $urunler=[];
  $i=0;

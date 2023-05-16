@@ -55,7 +55,7 @@
                 </div>
                 <div class="custom-file">
                   <label for="exampleInputFile">Kategori Resmi Seç:</label>
-                  <input type="file" class="custom-file-input", name="image">
+                  <input type="file" class="custom-file-input", name="img">
 
                 </div>
 

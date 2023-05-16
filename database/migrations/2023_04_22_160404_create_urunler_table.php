@@ -21,6 +21,7 @@ return new class extends Migration
             $table->integer('fiyat');
             $table->string('renk');
             $table->string('beden');
+
             $table->string('keywords');
             $table->integer('miktar')->nullable();
             $table->string('durum');
