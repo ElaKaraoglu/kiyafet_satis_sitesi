@@ -35,7 +35,6 @@
 
 </head>
 <body>
-@include('front.header')
 <div class="banner_section layout_padding">
 
 
@@ -237,8 +236,6 @@
                   </div>
                 </div>
 </div>
-
-@include('front.contact')
 @include('front.footer')
 </body>
 </html>

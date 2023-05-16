@@ -65,7 +65,6 @@ return view('front.shopcart',[
     {
            $data=new sepet();
            $data->urun_id=$id;
-
            $data->kullanici_id=1;
            $data->save();
 
