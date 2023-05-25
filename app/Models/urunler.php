@@ -16,6 +16,13 @@ class urunler extends Model
    {
       return $this->belongsTo('App\Models\kategoriler','kategori_id','id');
    }
-
+   public function sepet()
+   {
+      return $this->hasMany(Shopcart_items::class,'urun_id','id');
+   }
+   public function siparis()
+   {
+      return $this->hasMany(siparis_detaylari::class,'urun_id','id');
+   }
 
 }

@@ -23,6 +23,10 @@ class User extends Authenticatable
      *
      * @var array<int, string>
      */
+    public function siparişler()
+    {
+       return $this->hasMany(siparisler::class,'kullanici_id');
+    }
     protected $fillable = [
         'name',
         'email',

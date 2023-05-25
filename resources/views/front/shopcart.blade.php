@@ -59,7 +59,7 @@
                             <dt>Total:</dt>
                             <dd class="text-right text-dark b ml-3"><strong>{{$total}} TL</strong></dd>
                         </dl>
-                        <hr> <a href="/" class="btn btn-out btn-primary btn-square btn-main" data-abc="true"> Alışverişe Devam Et </a> <a href="/order/store/{{$data->id}}"  class="btn btn-out btn-success btn-square btn-main mt-2" data-abc="true">Alışverişi Tamamla</a>
+                        <hr> <a href="/" class="btn btn-out btn-primary btn-square btn-main" data-abc="true"> Alışverişe Devam Et </a> <a href="/admin/order/store/{{$data->sepet_id}}"  class="btn btn-out btn-success btn-square btn-main mt-2" data-abc="true">Alışverişi Tamamla</a>
                     </div>
                 </div>
             </aside>

@@ -11,6 +11,7 @@ use Illuminate\Support\Facades\Auth;
 
 class HomeController extends Controller
 {
+    public $globaluser;
 
    public function index()
    {
@@ -116,16 +117,21 @@ class HomeController extends Controller
         // Form'dan gelen verileri al
         $email = $request->input('email');
         $password = $request->input('password');
-        $user=User::first();
+        $users=User::all();
+        $girişbaşaralı=false;
         // Auth::attempt ile kullanıcıyı oturum açtırmaya çalış
-        if ($user->email==$email && $user->password==$password) {
-
+        foreach($users as $user)
+        {
+            if ($user->email==$email && $user->password==$password) {
+                $girişbaşaralı=true;
             // Oturum açma işlemi başarılıysa, kullanıcıyı yönlendir
              $sliderdata=kategoriler::limit(4)->get();
             $productlist=urunler::limit(4)->get();
             $setting=settings::first();
             $userstatus=true;
-            $user=User::first();
+            session(['globaluser' => $user]);
+
+
 
 
             return view('front.index',[
@@ -133,18 +139,23 @@ class HomeController extends Controller
                 'productlist'=>$productlist,
                 'setting'=>$setting,
                 'userstatus'=>$userstatus,
-                'user'=>$user
+                'user'=>session('globaluser')
+
+
+
             ]);
         }
 
-        // Oturum açma işlemi başarısızsa, hata mesajını göster
-        return back()->withErrors([
-            'email' => 'Email adresi veya şifre yanlış.',
-        ]);
-    }
 
-    // Form submit edilmemişse, giriş sayfasını göster
-    return view('front.userlogin');
+        }
+ if($girişbaşaralı==false){
+             return redirect('/login');
+        }
+        // Oturum açma işlemi başarısızsa, hata mesajını göster
+
+
+        }
+
     }
 
      public function products($id)

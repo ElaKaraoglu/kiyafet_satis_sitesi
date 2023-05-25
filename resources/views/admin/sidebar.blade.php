@@ -25,8 +25,8 @@
         <ul class="sidebar-menu">
             <li class="header">Panel</li>
             <li >
-                <a href="/admin/onaylanan_siparisler_index">
-                    <i class="fa fa-dashboard"></i> <span>Siparişler</span> 
+                <a href="/admin/siparis_index">
+                    <i class="fa fa-dashboard"></i> <span>Siparişler</span>
                 </a>
 
             </li>
@@ -44,9 +44,7 @@
 
             </li>
 
-                <a href="/admin/users">
-                    <i class="fa fa-th"></i> <span>Kullanıcılar</span>
-                </a>
+                
 
             </li>
 

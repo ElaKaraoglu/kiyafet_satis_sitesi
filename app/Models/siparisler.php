@@ -13,4 +13,8 @@ class siparisler extends Model
     {
         return $this->hasMany('App\Models\siparisdetaylari','siparis_id');
     }
+    public function user()
+    {
+       return $this->belongsTo(User::class,'kullanici_id','id');
+    }
 }
