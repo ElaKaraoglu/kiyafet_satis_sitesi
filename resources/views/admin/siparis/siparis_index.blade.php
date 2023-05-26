@@ -48,7 +48,6 @@
                   <td>{{$rs->durum}}</td>
 
 
-                  <td><a href="/admin/siparis_detay/{{$rs->id}}"  class="btn btn-block btn-primary btn-xs" >Ayrıntı Gör</td>
 
 
 

@@ -4,6 +4,7 @@ namespace App\Http\Controllers\AdminPanel;
 
 use App\Http\Controllers\Controller;
 use App\Models\kategoriler;
+use App\Models\sepet;
 use App\Models\Shopcart_items;
 use App\Models\siparisler;
 use App\Models\siparis_detaylari;
@@ -57,21 +58,13 @@ class SiparisController extends Controller
     public function store(Request $request, $id)
     {
        //  $data=sepet::where('id',$id)->get(); kullanıcı için
-         $items=Shopcart_items::where('sepet_id',$id)->get();
+         $items=sepet::where('sepet_id',$id)->get();
 
          $siparis=new siparisler();
         $user=session('globaluser');
          $siparis->kullanici_id=$user->id;
 
          $siparis->save();
-        foreach($items as $item)
-        {
-             $data=new siparis_detaylari();
-             $data->urun_id=$item->urun_id;
-             $data->siparis_id=$siparis->id;
-             $data->save();
-
-        }
 
 
 

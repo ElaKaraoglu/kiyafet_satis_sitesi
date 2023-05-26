@@ -104,7 +104,7 @@
                     <div class="carousel-inner">
                         <div class="carousel-item active" style="height: 410px;">
                         <div style="text-align: center;">
-                            <img class="img-fluid" src="" style="max-width: 350px; height: auto;"  alt="Image">
+                            <img class="img-fluid" src="{{asset('Storage/'.$resim1->resim)}}" style="max-width: 350px; height: auto;"  alt="Image">
                         </div>
                             <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                                 <div class="p-3" style="max-width: 700px;">
@@ -114,7 +114,7 @@
                         </div>
                         <div class="carousel-item" style="height: 410px;">
                         <div style="text-align: center;">
-                            <img class="img-fluid" src=" " style="max-width: 350px; height: auto;" alt="Image">
+                            <img class="img-fluid" src="{{asset('Storage/'.$resim2->resim)}}" style="max-width: 350px; height: auto;" alt="Image">
                         </div>
                             <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                                 <div class="p-3" style="max-width: 700px;">
