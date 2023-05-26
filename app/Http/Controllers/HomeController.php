@@ -117,6 +117,8 @@ class HomeController extends Controller
         // Form'dan gelen verileri al
         $email = $request->input('email');
         $password = $request->input('password');
+        $resim1=urunler::find(46);
+       $resim2=urunler::find(90);
         $users=User::all();
         $girişbaşaralı=false;
         // Auth::attempt ile kullanıcıyı oturum açtırmaya çalış
@@ -139,6 +141,8 @@ class HomeController extends Controller
                 'productlist'=>$productlist,
                 'setting'=>$setting,
                 'userstatus'=>$userstatus,
+                'resim1'=>$resim1,
+                'resim2'=>$resim2,
                 'user'=>session('globaluser')
 
 
